@@ -1,0 +1,116 @@
+INTRODUÇÃO AO GIT E GITHUB -
+
+Git - Criado em 2005 por Linus Torvalds, é um sistema de versionamento
+de código distribuído. Também é o criador por trás do Linux. 
+O Linux foi criado de maneira colaborativa.
+
+O git ajuda a criar e monitorar diferentes versões do nosso código,
+dentro da nossa máquina. 
+
+Benefícios de aprender Git e GitHub juntas (tecnologias distintas)
+
+1- Controle de Versão
+2- Armazenamento em nuvem 
+3- Trabalho em equipe
+4- Melhorar seu código
+5- Reconhecimento
+
+CLI - Command Line Interface - Não possui uma interface gráfica
+GUI - Graphic User Interface 
+
+Comandos básicos para se situar na utilização de Git - 
+Mudar de Pastas/Listar as pastas/Criar pastas e arquivos/Deletar pastas e arquivos
+
+Comandos Windows // Comandos Unix
+-cd			-cd
+-dir			-ls
+-mkdir			-mkdir
+-del/rmdir		-rm -rf
+
+
+dir é utilizado para listar os diretórios na pasta em que se está situado.
+cd é utilizado para navegar entre as pastas e é igual para todos os sistemas operacionais.
+cls é utilizado para limpar a tela
+TAB tem a função de auto-completar
+mkdir é utilizado para criar uma pasta
+echo printa de volta no terminal uma frase ou texto que você passa.
+
+
+Git por baixo dos panos - 
+
+-SHA1
+-Objetos fundamentais
+-Sistema distribuído
+-Segurança
+
+SHA - A sigla SHA significa Secure Hash Algorithm(Algoritmo de Hash
+Seguro), é um conjunto de funções hash criptográficas projetadas pela
+NSA(Agência de Segurança Nacional dos EUA).
+A encriptação gera conjunto de caracteres identificador de 40 dígitos.
+
+Objetos internos do GIT - Blobs, Trees, Commits
+Objetos básicos do GIT responsáveis pelo versionamento do código.
+
+CHAVE SSH - è uma forma de estabelecer uma conexão segura e encriptada
+entre duas máquinas.
+comandos para criar a chave ssh- 
+
+1-
+ssh-keygen -t ed25519 -c (email do github)
+
+2-
+a chave que é utilizada no github é sempre a chave pública
+
+
+3-
+eval $(ssh-agent -s)
+Nesse comando ele esta startando o projeto, o ssh agent esta rodando
+em plano de fundo.
+
+4-
+ssh-add (caminho de onde está a chave)
+O que é passado pro agente é a chave privada, pois toda vez que chegar uma
+criptografia com essa chave essa chave privada sera usada para
+descriptografa-lá.
+
+git clone - comando para clonar um repositório GIT 
+
+-INICIAR O GIT
+-INICIAR O VERSIONAMENTO 
+-CRIAR UM COMMIT
+
+-git init
+-git add
+-git commit
+
+Todo comando do Git leva a palavra Git na frente
+
+ls -a para acessar arquivos ocultos
+
+git config --global user.email "E-mail" - configuração do Git global para
+primeiras utilizações
+
+git config --global user.name
+
+Adicionando um arquivo na pasta - 
+arquivo markdown (forma mais humana de escrever um arquivo HTML)
+No markdown são utilizadas as "#" ao invés de uma tag h1,h2,h3 no HTML
+Ex: # = H1 ## = H2 ### = H3
+Todo tipo de markdown tem um guia, e todas as funcionalidades podem ser 
+consultadas em "Ajuda > Markdown Reference" no aplicativo Typora.
+
+Conflitos no GitHub -
+
+O código sendo editado na mesma linha por 2 máquinas diferentes.
+È necessário puxar o código do GitHub novamente, para ter a versão mais
+atualizada do código, juntar o que as 2 máquinas/pessoas trabalharam
+e subir novamente o código para o GitHub. Esse é o chamado conflito de 
+Merge, o GitHub deixa que voce efetue tudo manualmente, para que voce
+escolha qual é o estado mais atualizado e qual é a versão mais recente
+do código nesses casos.
+
+(Markdownguide.org) contém toda a sintaxe básica do MarkDown
+
+Link para download do Git - https://git-scm.com/downloads
+
+git add . para adicionar uma nova pasta/arquivo ao versionamento
